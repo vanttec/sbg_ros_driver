@@ -29,10 +29,10 @@ confWithRos: true
 
 uartConf:
   # Port Name
-  portName: "/dev/ttyUSB0"
+  portName: "/dev/ttyUSB1"
 
   # Baude rate (4800 ,9600 ,19200 ,38400 ,115200 [default],230400 ,460800 ,921600)
-  baudRate: 115200
+  baudRate: 460800
 
   # Port Id
   # 0 PORT_A: Main communication interface. Full duplex.
@@ -63,7 +63,7 @@ sensorParameters:
   # 3 MARINE          Used in marine and underwater applications
   # 4 AIRPLANE        For fixed wings aircraft
   # 5 HELICOPTER      For rotary wing aircraft
-  motionProfile: 1
+  motionProfile: 3
 
 # IMU_ALIGNMENT_LEVER_ARM
 imuAlignementLeverArm:
