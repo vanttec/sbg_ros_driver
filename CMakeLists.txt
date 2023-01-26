@@ -49,6 +49,10 @@ add_message_files(FILES
   SbgMagCalib.msg
   SbgStatusAiding.msg
   SbgEkfStatus.msg
+  InsPosPub.msg
+  InsRefPub.msg
+  LocalVelPub.msg
+  NEDPosePub.msg
 )
 
 ## Generate added messages and services with any dependencies listed here

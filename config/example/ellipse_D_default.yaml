@@ -16,7 +16,7 @@ driver:
 
 odometry:
     # Enable ROS odometry messages.
-    enable: false
+    enable: true
     # Publish odometry transforms.
     publishTf: true
     # Odometry frame IDs.
@@ -29,10 +29,10 @@ confWithRos: true
 
 uartConf:
   # Port Name
-  portName: "/dev/ttyUSB1"
+  portName: "/dev/ttyUSB0"
 
   # Baude rate (4800 ,9600 ,19200 ,38400 ,115200 [default],230400 ,460800 ,921600)
-  baudRate: 460800
+  baudRate: 115200
 
   # Port Id
   # 0 PORT_A: Main communication interface. Full duplex.
@@ -63,7 +63,7 @@ sensorParameters:
   # 3 MARINE          Used in marine and underwater applications
   # 4 AIRPLANE        For fixed wings aircraft
   # 5 HELICOPTER      For rotary wing aircraft
-  motionProfile: 3
+  motionProfile: 1
 
 # IMU_ALIGNMENT_LEVER_ARM
 imuAlignementLeverArm:
@@ -145,7 +145,7 @@ magnetometer:
     #     This calibration mode is only designed to be used when roll and pitch motions are less than ± 5°.
     #     To work correctly, the device should be rotated through at least a full circle.
     # 2 3D Tell the device to start a full 3D magnetic calibration procedure. The 3D magnetic calibration offers the best accuracy
-    mode: 2
+    mode: 1
 
     # 0 LOW_BW Use this parameter in case of strong magnetic noise during calibration.
     #     Motion during calibration is then limited to slow rotations.

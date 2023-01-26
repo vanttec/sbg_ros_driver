@@ -82,6 +82,16 @@ private:
   ros::Publisher          m_nav_sat_fix_pub_;
   ros::Publisher          m_odometry_pub_;
 
+  //Lo de la vectornav
+	ros::Publisher          m_ins_pos_pub;
+	//ros::Publisher ins_vel_pub = n.advertise<geometry_msgs::Vector3>("ins_vel", 1000);
+	//ros::Publisher ins_acc_pub = n.advertise<geometry_msgs::Vector3>("ins_acc", 1000);
+	//ros::Publisher ins_ar_pub = n.advertise<geometry_msgs::Vector3>("ins_ar", 1000);
+	ros::Publisher          m_local_vel_pub;
+	ros::Publisher          m_NED_pose_pub;
+	//ros::Publisher ECEF_pose_pub = n.advertise<geometry_msgs::Pose2D>("ECEF_pose", 1000);
+	ros::Publisher          m_ins_ref_pub;
+
   MessageWrapper          m_message_wrapper_;
   uint32_t                m_max_messages_;
   std::string             m_frame_id_;

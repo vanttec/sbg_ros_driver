@@ -56,6 +56,8 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2_ros/static_transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
+#include "geometry_msgs/Pose2D.h"
+#include "geometry_msgs/Vector3.h"
 
 // SbgRos message headers
 #include "sbg_driver/SbgStatus.h"
@@ -75,6 +77,10 @@
 #include "sbg_driver/SbgEvent.h"
 #include "sbg_driver/SbgImuShort.h"
 #include "sbg_driver/SbgAirData.h"
+#include "sbg_driver/InsPosPub.h"
+#include "sbg_driver/InsRefPub.h"
+#include "sbg_driver/LocalVelPub.h"
+#include "sbg_driver/NEDPosePub.h"
 
 namespace sbg
 {

@@ -124,6 +124,11 @@ typedef enum _SbgEComLog
 	SBG_ECOM_LOG_DEPTH						= 47,		/*!< Depth sensor measurement log used for subsea navigation. */
 	SBG_ECOM_LOG_DIAG						= 48,		/*!< Diagnostic log. */
 
+	INS_POS_PUB = 50,
+    INS_REF_PUB = 51,
+    LOCAL_VEL_PUB = 52,
+    NED_POSE_PUB = 53,
+	
 	SBG_ECOM_LOG_ECOM_NUM_MESSAGES						/*!< Helper definition to know the number of ECom messages */
 } SbgEComLog;
 
@@ -278,7 +283,7 @@ typedef enum _SbgEComCmd
 	/* Odometer configuration (using CAN) */
 	SBG_ECOM_CMD_ODO_CAN_CONF 				= 45,		/*!< Configuration for CAN based odometer (CAN ID & DBC) */
 
-	/* Misc. */
+  /* Misc. */
 	SBG_ECOM_LOG_ECOM_NUM_CMDS							/*!< Helper definition to know the number of commands */
 } SbgEComCmd;
 
